@@ -1,19 +1,16 @@
 @import './components/all';
+
 .app {
   display: flex;
   height: 100%;
 
-  .rightColumn {
+  .usersList {
+    width: 30%;
+  }
+
+  .chatWrapper {
     display: flex;
     flex-direction: column;
     width: 70%;
-  }
-
-  .messagesList {
-    flex-grow: 1;
-  }
-
-  .usersList {
-    width: 30%;
   }
 }

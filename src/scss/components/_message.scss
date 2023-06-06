@@ -1,0 +1,19 @@
+.message {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: start;
+  gap: 10px;
+  margin: 10px;
+
+  &_image {
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+  }
+
+  &_text {
+    background-color: grey;
+    border-radius: 15px;
+    padding: 10px;
+  }
+}
