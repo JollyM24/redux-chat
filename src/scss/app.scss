@@ -1,0 +1,19 @@
+@import './components/all';
+.app {
+  display: flex;
+  height: 100%;
+
+  .rightColumn {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .messagesList {
+    flex-grow: 1;
+  }
+
+  .usersList {
+    width: 30%;
+  }
+}
