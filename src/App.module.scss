@@ -1,0 +1,18 @@
+.app {
+  display: flex;
+  height: 100%;
+
+  .rightColumn {
+    display: felx;
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .messagesList {
+    flex-grow: 1;
+  }
+
+  .usersList {
+    width: 30%;
+  }
+}

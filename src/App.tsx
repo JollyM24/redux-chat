@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { UsersList } from './components/UsersList';
+import { UsersList } from './components/UsersList/UsersList';
 
-import './scss/app.scss';
+import styles from './App.module.scss';
 
 function App() {
   return (
-    <div className="app">
-      <UsersList />
-      <div className="chatWrapper">
+    <div className={styles.app}>
+      <UsersList className={styles.usersList} />
+      <div className={styles.rightColumn}>
         <p>MessagesList</p>
         <p>SendMessage</p>
       </div>

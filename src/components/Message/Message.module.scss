@@ -1,0 +1,29 @@
+.message {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: start;
+  gap: 10px;
+  margin: 10px;
+}
+
+.text {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.image {
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.currentUserMessage {
+  grid-template-columns: 1fr auto;
+  justify-items: end;
+}
+
+.currentUsersMessageText {
+  background-color: white;
+  grid-row: 1;
+}

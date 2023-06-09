@@ -1,3 +1,5 @@
+import { FC } from 'react';
+
 export interface IMessage {
   id: number;
   text: string;
@@ -9,8 +11,8 @@ interface IMessageProps {
   message: IMessage;
 }
 
-export const Message = ({}) => {
-  return <li>Message</li>;
+export const Message: FC<IMessageProps> = ({ message }) => {
+  return <li></li>;
 };
 
 // className={`text ${message.authorId === currentUser.id ? 'currentUser' : ''}`}

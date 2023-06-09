@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
-import { IMessage } from '../components/Message';
+import { IMessage } from '../components/Message/Message';
 import { getMessagesApi } from '../api/messages';
 
 interface IMessageState {
