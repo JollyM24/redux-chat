@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { UsersList } from './components/UsersList/UsersList';
+import { MessagesList } from './components/MessagesList/MessagesList';
 
 import styles from './App.module.scss';
 
@@ -9,7 +10,7 @@ function App() {
     <div className={styles.app}>
       <UsersList className={styles.usersList} />
       <div className={styles.rightColumn}>
-        <p>MessagesList</p>
+        <MessagesList className={styles.messagesList} />
         <p>SendMessage</p>
       </div>
     </div>
