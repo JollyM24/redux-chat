@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { useDispatch } from 'react-redux';
+import { changeCurrent } from '../../redux/users';
 
 import styles from './User.module.scss';
 
@@ -14,10 +15,16 @@ interface IUserProps {
 }
 
 export const User: FC<IUserProps> = ({ user }) => {
+  const dispatch = useDispatch();
+
   return (
-    <div className={styles.user}>
+    <li
+      className={styles.user}
+      onClick={() => {
+        dispatch(changeCurrent(user.id));
+      }}>
       <img className={styles.avatar} src={user?.avatar} alt="avatar" />
-      <div>{user.name}</div>
-    </div>
+      <span>{user.name}</span>
+    </li>
   );
 };
